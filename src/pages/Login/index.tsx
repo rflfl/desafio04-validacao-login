@@ -27,7 +27,7 @@ const Login = () => {
     defaultValues,
     reValidateMode: "onChange",
   });
-
+console.log(isValid)
   return (
     <Container>
       <LoginContainer>
@@ -49,7 +49,7 @@ const Login = () => {
             errorMessage={errors?.password?.message}
           />
           <Spacing />
-          <Button title="Entrar" />
+          <Button title="Entrar" disabled={!isValid} />
         </Column>
       </LoginContainer>
     </Container>

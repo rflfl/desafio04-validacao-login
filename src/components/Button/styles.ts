@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 
 export const ButtonContainer = styled.button`
@@ -13,5 +13,9 @@ export const ButtonContainer = styled.button`
     &:hover {
         opacity: 0.6;
         cursor:pointer;
+    }
+
+    &:disabled {
+        opacity: 0.6;
     }
 `
